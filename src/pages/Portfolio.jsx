@@ -24,7 +24,6 @@ function Portfolio() {
                             <p className="text-blue-600 font-semibold mb-2"> Academic Website</p>
                             <h2 className="text-2xl font-bold mb-4">Personal Portfolio Platform Website</h2>
                             <p className="text-gray-600 mb-6">Modern and responsive portfolio website showcasing projects, skills, and creative work with a clean and professional design.</p>
-                            {/* <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"> View Project </button> */}
                             <a href="https://amirwazir-dot.github.io/My-Portfolio/" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition" target="blank">View Project</a>
                         </div>
                     </div>
@@ -36,7 +35,28 @@ function Portfolio() {
                             <p className="text-blue-600 font-semibold mb-2"> Academic Website</p>
                             <h2 className="text-2xl font-bold mb-4"> Online Quran & Learning Platform </h2>
                             <p className="text-gray-600 mb-6">Modern academic website for online Quran and educational classes with a clean design and smooth learning experience.</p>
-                            {/* <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"> View Project </button> */}
+                            <a href="https://masoftwaresolution.github.io/Global-Educators-Pro/" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition" target="blank">View Project</a>
+                        </div>
+                    </div>
+                    <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-3 transition duration-300">
+                        <div className="overflow-hidden">
+                            <img src="/images/project3.png" alt="project" className="w-full h-64 hover:scale-110 transition duration-500"/>
+                        </div>
+                        <div className="p-6">
+                            <p className="text-blue-600 font-semibold mb-2"> Academic Website</p>
+                            <h2 className="text-2xl font-bold mb-4"> Online Quran & Learning Platform </h2>
+                            <p className="text-gray-600 mb-6">Modern academic website for online Quran and educational classes with a clean design and smooth learning experience.</p>
+                            <a href="https://resturent-website-hvax.vercel.app/" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition" target="blank">View Project</a>
+                        </div>
+                    </div>
+                    <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-3 transition duration-300">
+                        <div className="overflow-hidden">
+                            <img src="/images/project1.png" alt="project" className="w-full h-64 hover:scale-110 transition duration-500"/>
+                        </div>
+                        <div className="p-6">
+                            <p className="text-blue-600 font-semibold mb-2"> Academic Website</p>
+                            <h2 className="text-2xl font-bold mb-4"> Online Quran & Learning Platform </h2>
+                            <p className="text-gray-600 mb-6">Modern academic website for online Quran and educational classes with a clean design and smooth learning experience.</p>
                             <a href="https://masoftwaresolution.github.io/Global-Educators-Pro/" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition" target="blank">View Project</a>
                         </div>
                     </div>
@@ -48,7 +68,6 @@ function Portfolio() {
                             <p className="text-blue-600 font-semibold mb-2"> Academic Website</p>
                             <h2 className="text-2xl font-bold mb-4"> Online Quran & Learning Platform </h2>
                             <p className="text-gray-600 mb-6">Modern academic website for online Quran and educational classes with a clean design and smooth learning experience.</p>
-                            {/* <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"> View Project </button> */}
                             <a href="https://masoftwaresolution.github.io/Global-Educators-Pro/" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition" target="blank">View Project</a>
                         </div>
                     </div>
@@ -60,31 +79,6 @@ function Portfolio() {
                             <p className="text-blue-600 font-semibold mb-2"> Academic Website</p>
                             <h2 className="text-2xl font-bold mb-4"> Online Quran & Learning Platform </h2>
                             <p className="text-gray-600 mb-6">Modern academic website for online Quran and educational classes with a clean design and smooth learning experience.</p>
-                            {/* <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"> View Project </button> */}
-                            <a href="https://masoftwaresolution.github.io/Global-Educators-Pro/" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition" target="blank">View Project</a>
-                        </div>
-                    </div>
-                    <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-3 transition duration-300">
-                        <div className="overflow-hidden">
-                            <img src="/images/project1.png" alt="project" className="w-full h-64 hover:scale-110 transition duration-500"/>
-                        </div>
-                        <div className="p-6">
-                            <p className="text-blue-600 font-semibold mb-2"> Academic Website</p>
-                            <h2 className="text-2xl font-bold mb-4"> Online Quran & Learning Platform </h2>
-                            <p className="text-gray-600 mb-6">Modern academic website for online Quran and educational classes with a clean design and smooth learning experience.</p>
-                            {/* <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"> View Project </button> */}
-                            <a href="https://masoftwaresolution.github.io/Global-Educators-Pro/" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition" target="blank">View Project</a>
-                        </div>
-                    </div>
-                    <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-3 transition duration-300">
-                        <div className="overflow-hidden">
-                            <img src="/images/project1.png" alt="project" className="w-full h-64 hover:scale-110 transition duration-500"/>
-                        </div>
-                        <div className="p-6">
-                            <p className="text-blue-600 font-semibold mb-2"> Academic Website</p>
-                            <h2 className="text-2xl font-bold mb-4"> Online Quran & Learning Platform </h2>
-                            <p className="text-gray-600 mb-6">Modern academic website for online Quran and educational classes with a clean design and smooth learning experience.</p>
-                            {/* <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"> View Project </button> */}
                             <a href="https://masoftwaresolution.github.io/Global-Educators-Pro/" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition" target="blank">View Project</a>
                         </div>
                     </div>
