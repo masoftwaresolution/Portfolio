@@ -1,73 +1,390 @@
 import { Link } from "react-router-dom";
+import FAQ from "../components/FAQ";
+import { Code2, Palette, ShoppingCart, Smartphone, Globe, ShieldCheck, Search, ArrowRight, ClipboardList, PenTool, Laptop, Bug, Rocket, Headphones, } from "lucide-react";
+import { Monitor, Database, Server, GitBranch, Headset, Clock3, Trophy, Users, MessageCircle, } from "lucide-react";
 function Services() {
+    const technologies = [
+        {
+            icon: <Monitor size={40} />,
+            title: "HTML5",
+            description: "Modern semantic website structure.",
+        },
+        {
+            icon: <Palette size={40} />,
+            title: "CSS3",
+            description: "Beautiful responsive styling.",
+        },
+        {
+            icon: <Code2 size={40} />,
+            title: "JavaScript",
+            description: "Interactive and dynamic websites.",
+        },
+        {
+            icon: <Code2 size={40} />,
+            title: "React JS",
+            description: "Fast and scalable frontend development.",
+        },
+        {
+            icon: <Palette size={40} />,
+            title: "Tailwind CSS",
+            description: "Utility-first CSS framework.",
+        },
+        {
+            icon: <Server size={40} />,
+            title: "Node.js",
+            description: "Backend development and APIs.",
+        },
+        {
+            icon: <Database size={40} />,
+            title: "MongoDB",
+            description: "Flexible NoSQL database.",
+        },
+        {
+            icon: <GitBranch size={40} />,
+            title: "Git & GitHub",
+            description: "Version control and collaboration.",
+        },
+        {
+            icon: <PenTool size={40} />,
+            title: "Figma",
+            description: "Professional UI/UX design.",
+        },
+    ];
+    const whyChooseUs = [
+        {
+            icon: <Trophy size={40} />,
+            title: "Quality Work",
+            description:
+                "We deliver clean, professional and high-performance websites.",
+        },
+        {
+            icon: <Clock3 size={40} />,
+            title: "Fast Delivery",
+            description:
+                "Projects are completed on time without compromising quality.",
+        },
+        {
+            icon: <ShieldCheck size={40} />,
+            title: "Secure Development",
+            description:
+                "We follow modern security standards for every project.",
+        },
+        {
+            icon: <Users size={40} />,
+            title: "Expert Team",
+            description:
+                "Our experienced developers build reliable digital solutions.",
+        },
+        {
+            icon: <Headset size={40} />,
+            title: "24/7 Support",
+            description:
+                "We're always available to help after project delivery.",
+        },
+        {
+            icon: <Code2 size={40} />,
+            title: "Latest Technologies",
+            description:
+                "We use modern tools to build fast and scalable applications.",
+        },
+    ];
+    const services = [
+        {
+            icon: <Code2 size={40} />,
+            title: "Web Development",
+            description:
+                "Modern, fast and responsive websites built with the latest technologies.",
+        },
+        {
+            icon: <Palette size={40} />,
+            title: "UI/UX Design",
+            description:
+                "Creative and user-friendly designs that improve user experience.",
+        },
+        {
+            icon: <ShoppingCart size={40} />,
+            title: "E-Commerce Development",
+            description:
+                "Build secure and responsive e-commerce websites.",
+        },
+        {
+            icon: <Smartphone size={40} />,
+            title: "Responsive Design",
+            description:
+                "Websites that look perfect on desktop, tablet and mobile devices.",
+        },
+        {
+            icon: <Globe size={40} />,
+            title: "SEO Optimization",
+            description:
+                "Improve your website ranking and reach more customers online.",
+        },
+        {
+            icon: <ShieldCheck size={40} />,
+            title: "Website Maintenance",
+            description:
+                "Regular updates, security monitoring and performance optimization.",
+        },
+    ];
+
+    const process = [
+        {
+            icon: <ClipboardList size={32} />,
+            title: "Requirement Analysis",
+            description: "We understand your business goals and project requirements.",
+        },
+        {
+            icon: <PenTool size={32} />,
+            title: "UI/UX Design",
+            description: "Wireframes and modern user interface design are prepared.",
+        },
+        {
+            icon: <Laptop size={32} />,
+            title: "Development",
+            description: "Clean, scalable and responsive code is developed.",
+        },
+        {
+            icon: <Bug size={32} />,
+            title: "Testing",
+            description: "Every feature is tested to ensure high quality.",
+        },
+        {
+            icon: <Rocket size={32} />,
+            title: "Deployment",
+            description: "The website is launched on a secure production server.",
+        },
+        {
+            icon: <Headphones size={32} />,
+            title: "Support",
+            description: "Continuous support and maintenance after launch.",
+        },
+    ];
     return (
         <div>
             <div className="bg-[url('/images/web.jpg')] bg-cover bg-center h-[70vh]">
-                <div className="bg-black/70 h-full flex flex-col justify-center items-center text-white text-center px-6">
-                    <p className="text-blue-400 font-semibold mb-4"> MA Software Solution </p>
-                    <h1 className="text-5xl md:text-6xl font-bold mb-6"> Our Services </h1>
-                    <p className="text-left md:text-left lg:text-center max-w-4xl text-lg text-gray-300">Explore our professional web development services including business websites, portfolio designs, e-commerce solutions, and custom web applications built with creativity, performance, and modern technology.</p>
+                <div className="bg-black/70 h-full flex flex-col justify-center items-center text-white text-center px-6"> 
+                    <h1 className="text-5xl md:text-6xl font-bold mb-6 pt-10"> Our Services </h1>
+                    <p className="text-left md:text-left lg:text-center max-w-5xl text-lg text-gray-300">We build modern websites, web applications, and user-friendly digital experiences that help businesses grow online.</p>
                 </div>
             </div>
-            <div className="lg:flex lg:justify-between lg:items-center px-6 md:px-12 lg:px-24 py-8 lg:py-16 bg-slate-950">
-                <div className="lg:w-1/2 w-full">
-                    <h1 className="text-2xl md:text-3xl lg:text-4xl text-white pb-2 lg:pb-4 lg:font-extrabold md:font-bold font-bold">Custom Website Development</h1>
-                    <p className="pb-4 text-gray-300">MA Software Solution makes it easy to build professional websites for businesses, portfolios, and online stores with modern designs and powerful features that help showcase your brand and grow your online presence.</p>
-                    <h1 className="text-2xl font-bold pb-1 text-white">Our Services</h1>
-                    <ul className="list-inside list-disc">
-                        <li className="text-gray-300">Business Website</li>
-                        <li className="text-gray-300">E-Commerce Websites</li>
-                        <li className="text-gray-300">Portfolio Websites</li>
-                        <li className="text-gray-300">Landing Pages Website</li>
-                        <li className="text-gray-300">Responsive Website Design</li>
-                        <li className="text-gray-300">Website Redesign</li>
-                    </ul>
-                    <Link to="/contact" className="mt-4 text-c h-12 w-32 rounded-2xl bg-blue-900 hover:bg-blue-700 flex items-center justify-center text-white ">Contact Us</Link>
+            <section className="px-6 md:px-12 lg:px-24 py-20 bg-slate-900">
+
+                <div className="text-center mb-14">
+                    <p className="text-cyan-400 uppercase tracking-widest">
+                        What We Offer
+                    </p>
+
+                    <h2 className="text-4xl md:text-5xl text-white font-bold mt-3">
+                        Our Professional Services
+                    </h2>
+
+                    <p className="text-gray-400 max-w-3xl mx-auto mt-5">
+                        We help businesses build powerful digital products with modern web
+                        development and creative UI/UX design solutions.
+                    </p>
                 </div>
-                <div>
-                    <img src="/images/display.png" alt="display pic" className="mx-auto mt-8 md:mt-6 lg:mt-0" />
+
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {services.map((item, index) => (
+                        <div
+                            key={index}
+                            className="bg-slate-950 border border-blue-900 hover:border-cyan-400  rounded-2xl p-8 overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(34,211,238,0.25)] group"
+                        >
+                            <div className="text-cyan-400 mb-6 group-hover:scale-110 transition">
+                                {item.icon}
+                            </div>
+
+                            <h3 className="text-2xl font-semibold text-white mb-4">
+                                {item.title}
+                            </h3>
+
+                            <p className="text-gray-400 leading-7">
+                                {item.description}
+                            </p>
+
+                            <button className="mt-8 flex items-center gap-2 text-cyan-400 hover:text-white transition">
+                                Learn More
+                                <ArrowRight size={18} />
+                            </button>
+                        </div>
+                    ))}
                 </div>
+
+            </section>
+
+            {/* Development Process */}
+
+            <section className="bg-slate-950 py-20">
+
+                <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+
+                    <div className="text-center mb-16">
+
+                        <p className="uppercase tracking-widest text-cyan-400">
+                            Our Process
+                        </p>
+
+                        <h2 className="text-4xl font-bold mt-3 text-white">
+                            How We Work
+                        </h2>
+
+                        <p className="text-gray-400 mt-4 max-w-3xl mx-auto">
+                            Our proven development process ensures every project is delivered
+                            with quality, performance and customer satisfaction.
+                        </p>
+
+                    </div>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                        {process.map((step, index) => (
+
+                            <div
+                                key={index}
+                                className="relative bg-slate-900 rounded-2xl p-8 border border-blue-900 hover:border-cyan-400 transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(34,211,238,0.25)]"
+                            >
+
+                                <div className="absolute -top-5 left-8 bg-cyan-500 w-12 h-12 rounded-full flex items-center justify-center font-bold text-black">
+                                    {index + 1}
+                                </div>
+
+                                <div className="mt-8 text-cyan-400 mb-5">
+                                    {step.icon}
+                                </div>
+
+                                <h3 className="text-2xl font-semibold mb-3 text-white">
+                                    {step.title}
+                                </h3>
+
+                                <p className="text-gray-400 leading-7">
+                                    {step.description}
+                                </p>
+
+                            </div>
+
+                        ))}
+
+                    </div>
+
+                </div>
+
+            </section>
+            <section className="py-20 bg-slate-900">
+
+                <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+
+                    <div className="text-center mb-14">
+
+                        <p className="text-cyan-400 uppercase tracking-widest">
+                            Technologies
+                        </p>
+
+                        <h2 className="text-4xl font-bold mt-3 text-white">
+                            Technologies We Use
+                        </h2>
+
+                        <p className="text-gray-400 max-w-3xl mx-auto mt-5">
+                            We use modern technologies to build secure, scalable and high-performance websites and web applications.
+                        </p>
+
+                    </div>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                        {technologies.map((tech, index) => (
+
+                            <div
+                                key={index}
+                                className="bg-slate-950 rounded-2xl p-8 text-center border border-blue-900 hover:border-cyan-400 transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(34,211,238,0.25)]"
+                            >
+
+                                <div className="text-cyan-400 flex justify-center mb-5">
+                                    {tech.icon}
+                                </div>
+
+                                <h3 className="text-2xl font-semibold mb-3 text-white">
+                                    {tech.title}
+                                </h3>
+
+                                <p className="text-gray-400">
+                                    {tech.description}
+                                </p>
+
+                            </div>
+
+                        ))}
+
+                    </div>
+
+                </div>
+
+            </section>
+            <section className="py-20 bg-slate-950">
+
+                <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+
+                    <div className="text-center mb-14">
+
+                        <p className="uppercase tracking-widest text-cyan-400">
+                            Why Choose Us
+                        </p>
+
+                        <h2 className="text-4xl font-bold mt-3 text-white">
+                            Why Businesses Trust MA Software Solution
+                        </h2>
+
+                        <p className="text-gray-400 mt-5 max-w-3xl mx-auto">
+                            We are committed to delivering innovative, secure and high-quality digital solutions that help businesses grow online.
+                        </p>
+
+                    </div>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                        {whyChooseUs.map((item, index) => (
+
+                            <div
+                                key={index}
+                                className="bg-slate-900 rounded-2xl p-8 border border-blue-900 hover:border-cyan-400 transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(34,211,238,0.25)]"
+                            >
+
+                                <div className="text-cyan-400 mb-5">
+                                    {item.icon}
+                                </div>
+
+                                <h3 className="text-2xl font-semibold mb-4 text-white">
+                                    {item.title}
+                                </h3>
+
+                                <p className="text-gray-400 leading-7">
+                                    {item.description}
+                                </p>
+
+                            </div>
+
+                        ))}
+
+                    </div>
+
+                </div>
+
+            </section>
+            <div className="bg-slate-900">
+                <FAQ />
             </div>
-            <div className="bg-slate-950 pt-6">
-                <h1 className="text-2xl md:text-3xl lg:text-4xl text-center font-bold pb-3 text-white">Websites We Develop</h1>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-6 md:mx-12 lg:mx-24 py-10 gap-6 lg:gap-10">
-                    <div className="h-auto w-full lg:w-90 bg-slate-900 border border-slate-800 rounded-2xl hover:border-cyan-400 hover:-translate-y-2">
-                        <img src="/images/ecommerce.png" alt="ecommerce" className="rounded-full mx-auto mt-4" />
-                        <h1 className="text-white text-2xl font-semibold text-center py-4">Business Website</h1>
-                        <p className="mx-6 pb-4 text-gray-300">A business website should deliver a smooth and user-friendly experience across all devices while clearly representing the brand and engaging visitors effectively.</p>
+            <div className="bg-slate-950 py-20">
+                <div className="w-auto h-auto bg-slate-900 mx-24 flex justify-between items-center py-6 px-4 rounded-2xl">
+                    <div className="flex justify-center items-center gap-6">
+                        <div className="h-10 w-10 bg-slate-950 text-white flex justify-center items-center rounded-full"><MessageCircle size={20} /></div>
+                        <div>
+                            <h1 className="text-white text-3xl font-bold">Let's Build Your Next Digital Success Story</h1>
+                            <p className="text-white">Let's Build Something Great Together. Get in touch with us.</p>
+                        </div>
                     </div>
-                    <div className="h-auto w-full lg:w-90 bg-slate-900 border border-slate-800 rounded-2xl hover:border-cyan-400 hover:-translate-y-2">
-                        <img src="/images/ecommerce.png" alt="ecommerce" className="rounded-full mx-auto mt-4" />
-                        <h1 className="text-white text-2xl font-semibold text-center py-4">Business Website</h1>
-                        <p className="mx-6 pb-4 text-gray-300">A business website should deliver a smooth and user-friendly experience across all devices while clearly representing the brand and engaging visitors effectively.</p>
-                    </div>
-                    <div className="h-auto w-full lg:w-90 bg-slate-900 border border-slate-800 rounded-2xl hover:border-cyan-400 hover:-translate-y-2">
-                        <img src="/images/ecommerce.png" alt="ecommerce" className="rounded-full mx-auto mt-4" />
-                        <h1 className="text-white text-2xl font-semibold text-center py-4">Business Website</h1>
-                        <p className="mx-6 pb-4 text-gray-300">A business website should deliver a smooth and user-friendly experience across all devices while clearly representing the brand and engaging visitors effectively.</p>
-                    </div>
-                    <div className="h-auto w-full lg:w-90 bg-slate-900 border border-slate-800 rounded-2xl hover:border-cyan-400 hover:-translate-y-2">
-                        <img src="/images/ecommerce.png" alt="ecommerce" className="rounded-full mx-auto mt-4" />
-                        <h1 className="text-white text-2xl font-semibold text-center py-4">Business Website</h1>
-                        <p className="mx-6 pb-4 text-gray-300">A business website should deliver a smooth and user-friendly experience across all devices while clearly representing the brand and engaging visitors effectively.</p>
-                    </div>
-                    <div className="h-auto w-full lg:w-90 bg-slate-900 border border-slate-800 rounded-2xl hover:border-cyan-400 hover:-translate-y-2">
-                        <img src="/images/ecommerce.png" alt="ecommerce" className="rounded-full mx-auto mt-4" />
-                        <h1 className="text-white text-2xl font-semibold text-center py-4">Business Website</h1>
-                        <p className="mx-6 pb-4 text-gray-300">A business website should deliver a smooth and user-friendly experience across all devices while clearly representing the brand and engaging visitors effectively.</p>
-                    </div>
-                    <div className="h-auto w-full lg:w-90 bg-slate-900 border border-slate-800 rounded-2xl hover:border-cyan-400 hover:-translate-y-2">
-                        <img src="/images/ecommerce.png" alt="ecommerce" className="rounded-full mx-auto mt-4" />
-                        <h1 className="text-white text-2xl font-semibold text-center py-4">Business Website</h1>
-                        <p className="mx-6 pb-4 text-gray-300">A business website should deliver a smooth and user-friendly experience across all devices while clearly representing the brand and engaging visitors effectively.</p>
+                    <div>
+                        <Link to="/Contact" className="bg-blue-900 hover:bg-blue-700 rounded-2xl px-8 py-4 flex items-center justify-center text-white font-semibold">Start Your Project </Link>
                     </div>
                 </div>
-            </div>
-            <div className=" bg-slate-950 pb-6 px-6 py-10">
-                <p className="text-center text-cyan-400">Let's get started</p>
-                <h1 className="text-white text-center lg:text-3xl md:text-3xl text-2xl font-bold lg:py-3 py-2.5">Are you ready for a better, more productive business?</h1>
-                <h4 className="text-gray-300 text-center pb-4 max-w-2xl mx-auto">Stop worrying about technology problems. Focus on your business. Let us provide the support you deserve.</h4>
-                <Link to="/contact" className="bg-blue-900 hover:bg-blue-700 rounded-2xl text-center h-12 w-32 flex items-center justify-center text-white mx-auto transition duration-300">Contact Us</Link>
             </div>
         </div>
     )

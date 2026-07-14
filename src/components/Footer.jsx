@@ -32,10 +32,7 @@ function Footer() {
             </li>
             <li>
               <a href="/Portfolio" className="hover:text-blue-400 transition">Portfolio</a>
-            </li>
-            <li>
-              <a href="/Blog" className="hover:text-blue-400 transition">Blog</a>
-            </li>
+            </li> 
             <li>
               <a href="/Contact" className="hover:text-blue-400 transition">Contact Us</a>
             </li>

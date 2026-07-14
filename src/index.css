@@ -1,2 +1,36 @@
-@import "tailwindcss";
+@import "tailwindcss"; 
 
+
+.react-international-phone-input {
+  background: #0f172a !important;
+  color: white !important;
+  border: 1px solid white !important;
+}
+
+.react-international-phone-country-selector-button {
+  background: #0f172a !important;
+  border: 1px solid white !important;
+}
+
+.react-international-phone-country-selector-dropdown {
+  background: #0f172a !important;
+  color: white !important;
+}
+
+/* Flag button size */
+.react-international-phone-country-selector-button {
+  height: 50px !important;
+  width: 60px !important;
+  background: #0f172a !important;
+  border: 1px solid white !important;
+}
+
+/* Flag size */
+.react-international-phone-country-selector-button__flag-emoji {
+  font-size: 22px !important;
+}
+
+/* Dropdown arrow */
+.react-international-phone-country-selector-button__dropdown-arrow {
+  transform: scale(1.3);
+}
