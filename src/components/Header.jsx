@@ -18,11 +18,11 @@ function Header() {
             </div>
             {open && (
                 <div className="absolute top-16 left-0 w-full bg-slate-900 flex flex-col items-center py-6 space-y-5 md:hidden">
-                    <Link to="/" className="text-white font-bold hover:text-blue-400">Home</Link>
-                    <Link to="/About" className="text-white font-bold hover:text-blue-400">About</Link>
-                    <Link to="/Service" className="text-white font-bold hover:text-blue-400">Services</Link>
-                    <Link to="/Portfolio" className="text-white font-bold hover:text-blue-400">Portfolio</Link> 
-                    <Link to="/Contact" className="text-white font-bold hover:text-blue-400">Contact Us</Link>
+                    <Link to="/" onClick={() => setOpen(false)} className="text-white font-bold hover:text-blue-400">Home</Link>
+                    <Link to="/About" onClick={() => setOpen(false)} className="text-white font-bold hover:text-blue-400">About</Link>
+                    <Link to="/Service" onClick={() => setOpen(false)} className="text-white font-bold hover:text-blue-400">Services</Link>
+                    <Link to="/Portfolio" onClick={() => setOpen(false)} className="text-white font-bold hover:text-blue-400">Portfolio</Link> 
+                    <Link to="/Contact" onClick={() => setOpen(false)} className="text-white font-bold hover:text-blue-400">Contact Us</Link>
                 </div>
             )}
         </div>

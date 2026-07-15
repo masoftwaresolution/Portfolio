@@ -9,48 +9,44 @@ function Home() {
             icon: <Handshake className="w-14 h-14 text-cyan-400" />,
             title: "100%",
             subtitle: "Client Commitment",
-            description:
-                "We focus on understanding your needs and delivering solutions that help your business grow.",
+            description: "We focus on understanding your needs and delivering solutions that help your business grow.",
         },
         {
             icon: <Headset className="w-14 h-14 text-cyan-400" />,
             title: "24/7",
             subtitle: "Customer Support",
-            description:
-                "Our support team is always available to assist you whenever you need help.",
+            description: "Our support team is always available to assist you whenever you need help.",
         },
         {
             icon: <Code2 className="w-14 h-14 text-cyan-400" />,
             title: "Modern",
             subtitle: "Technologies",
-            description:
-                "We use the latest tools and technologies to build fast, secure, and scalable solutions.",
+            description: "We use the latest tools and technologies to build fast, secure, and scalable solutions.",
         },
         {
             icon: <Rocket className="w-14 h-14 text-cyan-400" />,
             title: "Fast",
             subtitle: "Project Delivery",
-            description:
-                "We value your time and ensure timely delivery without compromising on quality.",
+            description: "We value your time and ensure timely delivery without compromising on quality.",
         },
     ];
     return (
         <div>
             <div className="bg-[url('/images/web.jpg')] bg-cover bg-center min-h-screen">
-                <div className="bg-black/80 min-h-screen flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20">
+                <div className="bg-black/80 min-h-screen flex flex-col lg:flex-row items-center justify-between px-6 md:px-12 lg:px-24">
                     <div className="flex-1 text-white">
-                        <h1 className="text-5xl font-bold leading-tight ">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl pt-24 md:pt-32 lg:pt-10 font-bold leading-tight">
                             Transforming Ideas Into Powerful
                             <span className="text-blue-500"> Digital Solutions</span>
                         </h1>
-                        <p className="mt-6 max-w-xl"> We build scalable, secure, and innovative software solutions that help businesses automate processes, engage customers, and drive growth. </p>
-                        <div className="flex gap-6 mt-8">
-                            <Link to="/Service" className="bg-blue-900 hover:bg-blue-700 hover:scale-105 rounded-2xl px-8 py-4 mt-6 flex items-center justify-center text-white">Our Services </Link>
-                            <Link to="/portfolio" className="bg-white hover:bg-cyan-400 hover:text-slate-900 hover:scale-105 rounded-2xl px-8 py-4 mt-6 flex items-center justify-center text-blue-900 font-semibold">View Projects </Link>
+                        <p className="mt-2 md:mt-4 lg:mt-6 pr-0 md:pr-32 lg:pr-0 text-justify"> We create modern websites, responsive web applications, and digital solutions that help businesses grow, attract more customers, and build a strong online presence. </p>
+                        <div className="flex gap-6 mt-4 md:mt-4 lg:mt-8">
+                            <Link to="/Service" className="bg-blue-900 hover:bg-blue-700 hover:scale-105 rounded-2xl px-5 py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 lg:mt-6 flex items-center justify-center text-white">Our Services </Link>
+                            <Link to="/portfolio" className="bg-white hover:bg-cyan-400 hover:text-slate-900 hover:scale-105 rounded-2xl px-5 py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 lg:mt-6 flex items-center justify-center text-blue-900 font-semibold">View Projects </Link>
                         </div>
                     </div>
-                    <div className="flex-1 flex justify-center mt-12 lg:mt-0 lg:pt-20">
-                        <img src="/images/laptop.png" alt="Laptop" className="w-full max-w-3xl max-h-[60vh]" />
+                    <div className="flex-1 flex justify-center mt-12 lg:pt-10 mb-8 md:mb-6 lg:mb-0">
+                        <img src="/images/laptop.png" alt="Laptop" className="w-full max-w-2xl  max-h-[60vh]" />
                     </div>
                 </div>
             </div>
@@ -243,7 +239,7 @@ function Home() {
                                 />
                             ))}
                         </div>
-                    </div> 
+                    </div>
                     <div className="h-auto w-auto border border-blue-900 hover:border-cyan-400 bg-slate-950 overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(34,211,238,0.18)] px-4 py-6 rounded-2xl">
                         <p className="text-justify pt-3 text-gray-300">"The developers understood our requirements from day one and created a fast, user-friendly website that exceeded our expectations in both design and performance."</p>
                         <div className="flex items-center gap-4 pt-6">
@@ -309,17 +305,19 @@ function Home() {
             <div className="bg-slate-950">
                 <FAQ />
             </div>
-            <div className="bg-slate-900 py-20">
-                <div className="w-auto h-auto bg-slate-950 mx-24 flex justify-between items-center py-6 px-4 rounded-2xl">
-                    <div className="flex justify-center items-center gap-6">
-                        <div className="h-10 w-10 bg-slate-900 text-white flex justify-center items-center rounded-full"><MessageCircle size={20} /></div>
-                        <div>
-                            <h1 className="text-white text-3xl font-bold">Let's Build Your Next Digital Success Story</h1>
-                            <p className="text-white">Let's Build Something Great Together. Get in touch with us.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <Link to="/Contact" className="bg-blue-900 hover:bg-blue-700 rounded-2xl px-8 py-4 flex items-center justify-center text-white font-semibold">Start Your Project </Link>
+            <div className="bg-slate-900 py-20 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-7xl mx-auto bg-slate-950 rounded-2xl border border-slate-800 px-6 py-8 lg:px-10 lg:py-10">
+                    <div className="flex flex-col lg:flex-row items-center justify-between gap-8"> 
+                        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 text-center sm:text-left"> 
+                            <div className="h-14 w-14 bg-blue-900 rounded-full flex items-center justify-center shrink-0">
+                                <MessageCircle size={26} className="text-white" />
+                            </div> 
+                            <div>
+                                <h2 className="text-2xl md:text-3xl font-bold text-white"> Let's Build Your Next Digital Success Story </h2>
+                                <p className="text-gray-300 mt-2"> Let's build something great together. Get in touch with us today. </p>
+                            </div> 
+                        </div> 
+                        <Link to="/Contact" className="bg-blue-700 hover:bg-blue-800 duration-300 text-white hover:scale-105 font-semibold px-8 py-4 rounded-xl whitespace-nowrap" > Start Your Project </Link>
                     </div>
                 </div>
             </div>

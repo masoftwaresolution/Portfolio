@@ -161,10 +161,11 @@ function Services() {
     ];
     return (
         <div>
-            <div className="bg-[url('/images/web.jpg')] bg-cover bg-center h-[70vh]">
-                <div className="bg-black/70 h-full flex flex-col justify-center items-center text-white text-center px-6"> 
-                    <h1 className="text-5xl md:text-6xl font-bold mb-6 pt-10"> Our Services </h1>
-                    <p className="text-left md:text-left lg:text-center max-w-5xl text-lg text-gray-300">We build modern websites, web applications, and user-friendly digital experiences that help businesses grow online.</p>
+            <div className="bg-[url('/images/web1.jpg')] bg-cover bg-center h-[80vh] md:h-[70vh] lg:h-[70vh]">
+                <div className="bg-black/95 h-full text-white px-6 md:px-12 lg:px-24">
+                    <h1 className="text-5xl md:text-6xl font-bold lg:mb-6 md:mb-4 mb-2 pt-32 md:pt-36 lg:pt-36 text-left md:text-center lg:text-center text-cyan-400"> Our Services </h1>
+                    <h1 className="text-3xl md:text-4xl font-bold lg:mb-6 md:mb-4 mb-2 text-left md:text-center lg:text-center">Smart Digital Solutions for Modern Businesses</h1>
+                    <p className="text-left lg:text-lg md:text-lg text-gray-300 md:text-center lg:text-center">We provide professional web development and UI/UX design solutions to help businesses build a strong online presence, attract more customers, and achieve long-term growth.</p>
                 </div>
             </div>
             <section className="px-6 md:px-12 lg:px-24 py-20 bg-slate-900">
@@ -372,17 +373,19 @@ function Services() {
             <div className="bg-slate-900">
                 <FAQ />
             </div>
-            <div className="bg-slate-950 py-20">
-                <div className="w-auto h-auto bg-slate-900 mx-24 flex justify-between items-center py-6 px-4 rounded-2xl">
-                    <div className="flex justify-center items-center gap-6">
-                        <div className="h-10 w-10 bg-slate-950 text-white flex justify-center items-center rounded-full"><MessageCircle size={20} /></div>
-                        <div>
-                            <h1 className="text-white text-3xl font-bold">Let's Build Your Next Digital Success Story</h1>
-                            <p className="text-white">Let's Build Something Great Together. Get in touch with us.</p>
+            <div className="bg-slate-950 py-20 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-7xl mx-auto bg-slate-900 rounded-2xl border border-slate-800 px-6 py-8 lg:px-10 lg:py-10">
+                    <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+                        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 text-center sm:text-left">
+                            <div className="h-14 w-14 bg-blue-900 rounded-full flex items-center justify-center shrink-0">
+                                <MessageCircle size={26} className="text-white" />
+                            </div>
+                            <div>
+                                <h2 className="text-2xl md:text-3xl font-bold text-white"> Let's Build Your Next Digital Success Story </h2>
+                                <p className="text-gray-300 mt-2"> Let's build something great together. Get in touch with us today. </p>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <Link to="/Contact" className="bg-blue-900 hover:bg-blue-700 rounded-2xl px-8 py-4 flex items-center justify-center text-white font-semibold">Start Your Project </Link>
+                        <Link to="/Contact" className="bg-blue-700 hover:bg-blue-800 hover:scale-105 duration-300 text-white font-semibold px-8 py-4 rounded-xl whitespace-nowrap" > Start Your Project </Link>
                     </div>
                 </div>
             </div>

@@ -4,11 +4,11 @@ function About() {
     return (
         <div>
             <div>
-                <div className="bg-[url('/images/web.jpg')] bg-cover bg-center h-[70vh]">
-                    <div className="bg-black/70 h-full lg:flex lg:flex-col lg:justify-center lg:items-center md:flex md:flex-col md:justify-center md:items-center text-white text-center px-6">
-                        <h1 className="text-5xl md:text-6xl font-bold lg:mb-6 md:mb-4 mb-2"> About Us </h1>
-                        <h1 className="text-3xl md:text-4xl font-bold lg:mb-6 md:mb-4 mb-2">Building Digital Solutions That Drive Business Growth</h1>
-                        <p className="max-w-3xl text-left md:text-center lg:text-lg md:text-lg text-gray-300 lg:text-center">Your Trusted Partner for Modern Web Development & UI/UX Design</p>
+                <div className="bg-[url('/images/web1.jpg')] bg-cover bg-center h-[80vh] md:h-[70vh] lg:h-[70vh]">
+                    <div className="bg-black/95 h-full text-white px-6 md:px-12 lg:px-24">
+                        <h1 className="text-5xl md:text-6xl font-bold lg:mb-6 md:mb-4 mb-2 pt-32 md:pt-36 lg:pt-36 text-left md:text-center lg:text-center text-cyan-400"> About Us </h1>
+                        <h1 className="text-3xl md:text-4xl font-bold lg:mb-6 md:mb-4 mb-2 text-left md:text-center lg:text-center">Building Digital Solutions That Drive Business Growth</h1>
+                        <p className="text-left lg:text-lg md:text-lg text-gray-300 md:text-center lg:text-center">We are passionate about helping businesses succeed through modern web development and UI/UX design solutions. Our goal is to create fast, responsive, and user-friendly digital experiences that help brands grow with confidence.</p>
                     </div>
                 </div>
                 <section className="bg-slate-900 py-24 px-6 md:px-12 lg:px-24 border-t border-slate-800">
@@ -130,7 +130,7 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <div className="lg:flex lg:justify-between lg:items-center px-6 md:px-12 lg:px-24 lg:py-20 bg-slate-900 gap-16 border-t border-slate-800">
+                <div className="lg:flex lg:justify-between lg:items-center px-6 md:px-12 lg:px-24 py-20 bg-slate-900 gap-16 border-t border-slate-800">
                     <div className="lg:w-1/2 w-full">
                         <h1 className="text-2xl md:text-3xl lg:text-4xl text-white pb-4 font-bold">Our Vision</h1>
                         <p className="pb-4 text-gray-300 text-justify">Our vision is to become a trusted software company recognized for delivering innovative, reliable, and high-quality digital solutions. We aim to help businesses of all sizes establish a strong online presence and achieve sustainable growth through technology.</p>
@@ -141,7 +141,7 @@ function About() {
                         <img src="/images/office.jpg" alt="display pic" className="mt-10 md:mt-12 lg:mt-0 max-w-xl rounded-xl w-full mx-auto" />
                     </div>
                 </div>
-                <div className="lg:flex flex-row-reverse lg:justify-between lg:items-center px-6 md:px-12 lg:px-24 lg:py-20 bg-slate-950 gap-16 border-t border-slate-800">
+                <div className="lg:flex flex-row-reverse lg:justify-between lg:items-center px-6 md:px-12 lg:px-24 py-20 bg-slate-950 gap-16 border-t border-slate-800">
                     <div className="lg:w-1/2 w-full">
                         <h1 className="text-2xl md:text-3xl lg:text-4xl text-white pb-4 font-bold">Our Mission</h1>
                         <p className="pb-4 text-gray-300 text-justify">Our mission is to empower businesses with innovative web development and UI/UX design solutions that strengthen their digital presence. We are committed to creating modern, responsive, and user-friendly websites that help our clients achieve their business goals.</p>
@@ -345,17 +345,19 @@ function About() {
                     </div>
 
                 </section>
-                <div className="bg-slate-900 py-20 border-t border-slate-800">
-                    <div className="w-auto h-auto bg-slate-950 mx-24 flex justify-between items-center py-6 px-4 rounded-2xl">
-                        <div className="flex justify-center items-center gap-6">
-                            <div className="h-10 w-10 bg-slate-900 text-white flex justify-center items-center rounded-full"><MessageCircle size={20} /></div>
-                            <div>
-                                <h1 className="text-white text-3xl font-bold">Let's Build Your Next Digital Success Story</h1>
-                                <p className="text-white text-sm max-w-xl">Ready to bring your ideas to life? Contact our team today and let's create a modern digital solution for your business.</p>
+                <div className="bg-slate-900 py-20 px-4 sm:px-6 lg:px-8">
+                    <div className="max-w-7xl mx-auto bg-slate-950 rounded-2xl border border-slate-800 px-6 py-8 lg:px-10 lg:py-10">
+                        <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+                            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 text-center sm:text-left">
+                                <div className="h-14 w-14 bg-blue-900 rounded-full flex items-center justify-center shrink-0">
+                                    <MessageCircle size={26} className="text-white" />
+                                </div>
+                                <div>
+                                    <h2 className="text-2xl md:text-3xl font-bold text-white"> Let's Build Your Next Digital Success Story </h2>
+                                    <p className="text-gray-300 mt-2"> Let's build something great together. Get in touch with us today. </p>
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <Link to="/Contact" className="bg-blue-900 hover:bg-blue-700 rounded-2xl px-8 py-4 flex items-center justify-center text-white font-semibold">Start Your Project </Link>
+                            <Link to="/Contact" className="bg-blue-700 hover:bg-blue-800 hover:scale-105 duration-300 text-white font-semibold px-8 py-4 rounded-xl whitespace-nowrap" > Start Your Project </Link>
                         </div>
                     </div>
                 </div>
