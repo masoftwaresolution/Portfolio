@@ -24,7 +24,7 @@ function Portfolio() {
             image: "/images/project3.png",
             description:
                 "Educational platform with responsive and modern UI.",
-            technologies: "React • Tailwind CSS",
+            technologies: "HTML • CSS • JavaScript",
             demo: "https://globaleducatorspro.com/",
             github: "https://github.com/masoftwaresolution/Global-Educators-Pro",
         },
@@ -32,14 +32,14 @@ function Portfolio() {
         {
             id: 3,
             title: "Restaurant Website",
-            category: "UI/UX Design",
+            category: "Web Development",
             image: "/images/project2.png",
             description:
                 "Modern restaurant landing page with elegant interface.",
             technologies: "React • Tailwind CSS",
             demo: "https://resturent-website-nu.vercel.app/",
             github: "https://github.com/masoftwaresolution/Resturent-Website",
-        }, 
+        },
 
         {
             id: 4,
@@ -47,16 +47,49 @@ function Portfolio() {
             category: "Web Development",
             image: "/images/project4.png",
             description:
-                "Creative personal portfolio website.",
-            technologies: "React • Tailwind CSS",
+                "Modern personal portfolio with responsive design.",
+            technologies: "HTML • Tailwind CSS",
             demo: "https://amirwazir-dot.github.io/My-Portfolio/",
             github: "https://github.com/masoftwaresolution/Portfolio-",
+        },
+
+        {
+            id: 5,
+            title: "Real Estate Website",
+            category: "UI/UX Design",
+            image: "/images/project5.png",
+            description:
+                "Modern real estate website with responsive design.",
+            technologies: "Figma",
+            demo: "https://www.figma.com/design/CYgtEX91DbpJGt7YqLF5re/Real-Estate-Website-VS?node-id=0-1&t=vmZXqtYosHuuE20R-1",
+        },
+
+        {
+            id: 6,
+            title: "Shopping Bag Website",
+            category: "UI/UX Design",
+            image: "/images/project6.png",
+            description:
+                "Modern e-commerce shopping bag UI design.",
+            technologies: "Figma",
+            demo: "https://www.figma.com/design/IUkO3j9Ymo89z5wppvq7py/Shopping-Bag-Website?node-id=2001-8329&t=6mmJASfRqLJTX0sV-1",
+        },
+
+        {
+            id: 7,
+            title: "Landing Page Design",
+            category: "UI/UX Design",
+            image: "/images/project7.png",
+            description:
+                "Modern landing page with responsive design.",
+            technologies: "Figma",
+            demo: "https://www.figma.com/design/hldaJ9w6FUEqkGuhgdacwr/Landing-Page-Design?node-id=0-1&t=lDIot4BAsixS73HX-1",
         },
     ];
     const categories = [
         "All",
         "Web Development",
-        "UI/UX Design", 
+        "UI/UX Design",
     ];
     const [category, setCategory] = useState("All");
     const filteredProjects =
@@ -128,7 +161,7 @@ function Portfolio() {
                         key={item}
                         onClick={() => setCategory(item)}
                         className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${category === item
-                            ? "bg-blue-900 hover:bg-blue-700 hover:scale-105 text-white" 
+                            ? "bg-blue-900 hover:bg-blue-700 hover:scale-105 text-white"
                             : "bg-white hover:bg-cyan-400 hover:scale-105 text-slate-950"
                             }`}
                     >
@@ -175,15 +208,17 @@ function Portfolio() {
                                     Demo
                                 </a>
 
-                                <a
-                                    href={project.github}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="flex items-center gap-2 bg-white hover:bg-cyan-400 px-5 py-2 rounded-lg text-black"
-                                >
-                                    <FaGithub size={18} />
-                                    GitHub
-                                </a>
+                                {project.github && (
+                                    <a
+                                        href={project.github}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="flex items-center gap-2 bg-white hover:bg-cyan-400 px-5 py-2 rounded-lg text-black transition-all duration-300"
+                                    >
+                                        <FaGithub size={18} />
+                                        GitHub
+                                    </a>
+                                )}
                             </div>
                         </div>
                     </div>
