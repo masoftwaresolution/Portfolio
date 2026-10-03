@@ -14,15 +14,16 @@ function Footer() {
         <div>
           <h2 className="text-white text-2xl font-bold mb-4">MA Software Solution</h2>
           <p className="text-gray-300 leading-7">Building modern websites with creativity, performance, and <br />responsive design.</p>
-          <div className="flex gap-4 mt-6"> 
-            <a href="https://www.linkedin.com/in/muhammad-amir-035a0841b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" className="h-6 w-6 bg-white flex items-center justify-center hover:bg-blue-700 transition" >
-              <img src="/images/linkedin.svg" alt="TikTok" className="w-5 h-5" />
+          <div className="flex gap-4 mt-6">
+            <a href="https://www.linkedin.com/in/muhammad-amir-035a0841b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" className="h-6 w-6 flex items-center justify-center hover:bg-blue-700 transition" >
+              <LinkedInIcon className="text-white" />
+              
             </a>
-            <a href="https://www.facebook.com/share/1abLakc9RF" target="_blank" rel="noopener noreferrer" className="h-6 w-6 bg-white flex items-center justify-center hover:bg-blue-700 transition" >
-              <img src="/images/facebook.svg" alt="TikTok" className="w-5 h-5" />
+            <a href="https://www.facebook.com/share/1abLakc9RF" target="_blank" rel="noopener noreferrer" className="h-6 w-6 flex items-center justify-center hover:bg-blue-700 transition" >
+              <FacebookIcon className="text-white"/>
             </a>
-            <a href="https://www.tiktok.com/@amir.webdeveloper?_r=1&_t=ZS-983nZdHNsd6" target="_blank" rel="noopener noreferrer" className="h-6 w-6 bg-white flex items-center justify-center hover:bg-blue-700 transition" >
-              <img src="/images/tiktok.svg" alt="TikTok" className="w-5 h-5" />
+            <a href="https://www.tiktok.com/@amir.webdeveloper?_r=1&_t=ZS-983nZdHNsd6" target="_blank" rel="noopener noreferrer" className="h-6 w-6 flex items-center justify-center hover:bg-blue-700 transition" >
+              <SiTiktok className="text-white"/>
             </a>
           </div>
         </div>

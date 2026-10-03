@@ -3,6 +3,8 @@ import FAQ from "../components/FAQ";
 import { FaReact, FaNodeJs, FaGitAlt, FaGithub, FaHtml5, FaCss3Alt, } from "react-icons/fa";
 import { SiTailwindcss, SiJavascript, SiFirebase, } from "react-icons/si";
 import { MessageCircle, MessageSquare, ShieldCheck, Building2, ClipboardCheck, Headset, Star, Code2, Palette, Rocket, Handshake, } from "lucide-react";
+import { motion } from "framer-motion";
+import { slideLeft } from "../animations/Animations";
 function Home() {
     const stats = [
         {

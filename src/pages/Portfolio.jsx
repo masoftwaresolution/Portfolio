@@ -7,6 +7,18 @@ function Portfolio() {
     const projects = [
         {
             id: 1,
+            title: "Centric Design Studio",
+            category: "Web Development",
+            image: "/images/project8.png",
+            description:
+                "A modern and responsive website for an architecture and design studio.",
+            technologies: "React • Tailwind CSS",
+            demo: "https://centric-design-studio-website.vercel.app/",
+            github: "https://github.com/masoftwaresolution/Centric-Design-Studio-Website",
+        },
+
+        {
+            id: 2,
             title: "Prime Properties",
             category: "Web Development",
             image: "/images/project1.png",
@@ -18,7 +30,7 @@ function Portfolio() {
         },
 
         {
-            id: 2,
+            id: 3,
             title: "Global Educators",
             category: "Web Development",
             image: "/images/project3.png",
@@ -30,7 +42,7 @@ function Portfolio() {
         },
 
         {
-            id: 3,
+            id: 4,
             title: "Restaurant Website",
             category: "Web Development",
             image: "/images/project2.png",
@@ -42,7 +54,7 @@ function Portfolio() {
         },
 
         {
-            id: 4,
+            id: 5,
             title: "Portfolio Website",
             category: "Web Development",
             image: "/images/project4.png",
@@ -54,7 +66,7 @@ function Portfolio() {
         },
 
         {
-            id: 5,
+            id: 6,
             title: "Real Estate Website",
             category: "UI/UX Design",
             image: "/images/project5.png",
@@ -65,7 +77,7 @@ function Portfolio() {
         },
 
         {
-            id: 6,
+            id: 7,
             title: "Shopping Bag Website",
             category: "UI/UX Design",
             image: "/images/project6.png",
@@ -76,7 +88,7 @@ function Portfolio() {
         },
 
         {
-            id: 7,
+            id: 8,
             title: "Landing Page Design",
             category: "UI/UX Design",
             image: "/images/project7.png",
