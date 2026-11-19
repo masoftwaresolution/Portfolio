@@ -7,6 +7,7 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact"
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import PrivacyPolicy from "./pages/Privacypolicy";
 function App() {
   return (
     <Router>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/Service" element={<Service />} />
         <Route path="/Portfolio" element={<Portfolio />}/> 
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
     </Router>

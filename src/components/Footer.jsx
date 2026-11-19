@@ -45,6 +45,9 @@ function Footer() {
             <li>
               <Link to="/Contact" className="hover:text-blue-400 transition"> Contact Us </Link>
             </li>
+            <li>
+              <Link to="/Privacypolicy" className="hover:text-blue-400 transition"> Privacy Policy </Link>
+            </li>
           </ul>
         </div>
         <div>
