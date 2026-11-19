@@ -92,8 +92,7 @@ const PrivacyPolicy = () => {
         <div className="bg-slate-900 rounded-2xl shadow-sm border border-slate-200 p-6 md:p-12">
 
           <p className="text-white leading-8 mb-10">
-            MA Software Solution ("we", "our", or "us")
-            respects your privacy. This Privacy Policy explains
+            MA Software Solution respects your privacy. This Privacy Policy explains
             how we handle information when you visit our website
             or contact us about our services.
           </p>
